@@ -15,8 +15,8 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => const NotionLoginPage(), // Define the route for the login page
-        '/home': (context) => const HomePage(), // Define the route for the home page
+        '/': (context) => const NotionLoginPage(),
+        '/home': (context) => const HomePage(),
       },
     );
   }
