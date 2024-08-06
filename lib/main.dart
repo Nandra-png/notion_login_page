@@ -1,24 +1,22 @@
-// lib/main.dart
 import 'package:flutter/material.dart';
-import 'package:login_page/emaillogin.dart';
 import 'package:login_page/homepage.dart';
+import 'package:login_page/login.dart'; 
 
 void main() {
-  runApp(MyApp());
+  runApp(const MainApp());
 }
 
-class MyApp extends StatelessWidget {
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Login Page',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => EmailLoginPage(),
-        '/home': (context) => HomePage(),
+        '/': (context) => const NotionLoginPage(), // Define the route for the login page
+        '/home': (context) => const HomePage(), // Define the route for the home page
       },
     );
   }

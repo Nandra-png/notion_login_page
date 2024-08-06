@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:login_page/widgets/button.dart';
 import 'package:login_page/widgets/inputDecoration.dart';
-import 'package:login_page/widgets/text.dart';
 import 'package:login_page/widgets/login_controller.dart';
+import 'package:login_page/widgets/text.dart';
 
 class EmailLoginPage extends StatelessWidget {
   EmailLoginPage({super.key}) {
@@ -42,6 +42,7 @@ class EmailLoginPage extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             CustomButton(
+              icon: Icons.apple,
               text: "Continue with Apple",
               onTap: () {},
             ),
